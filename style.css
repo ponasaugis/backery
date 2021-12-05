@@ -162,12 +162,15 @@ p {
 	font-size: 62px;
 	letter-spacing: 1px;
 	color: #fffefa;
+	text-shadow: 0px 1px 4px rgba(0,0,0,0.16);
 }
 
 .slogan p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 22px;
 	margin: 0 20px;
+	color: #fffefa;
+	text-shadow: 0px 1px 4px rgba(0,0,0,0.16);
 	
 }
 
@@ -689,10 +692,10 @@ p {
 	color: #56534C;
 	letter-spacing: 2px;
 	line-height: 2;
-	/* width: 350px; */
 	font-size: 14px;
 	text-align: center;
 	max-width: 484px;
+	width: 95%;
 }
 
 .sliderImg {
@@ -999,6 +1002,8 @@ footer {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	margin: 0 15px;
+	color: #fffefa;
+	text-shadow: 0px 1px 4px rgba(0,0,0,0.16);
 }
 	
 
