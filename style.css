@@ -622,7 +622,8 @@ p {
 
 
 .sectionFife {
-	background-image: url(img/5/bg.png);
+	/* background-image: url(img/5/bg.png); */
+	background-color: #f3f1e9;
 	height: 150vh;
 	background-position: center;
 	
@@ -842,7 +843,8 @@ p {
 
 footer {
 	height: 30vh;	
-    background-image: url("img/5/bg.png");    
+    /* background-image: url("img/5/bg.png");     */
+	background-color: #f3f1e9;
 	background-size: cover;
 	overflow: hidden;
 	width: 100%;
