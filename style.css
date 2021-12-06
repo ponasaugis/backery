@@ -6,7 +6,7 @@
 }
 
 body {
-	background-color: #F3F1E9;
+	background-color: lime;
 }
 
 header {
@@ -846,7 +846,7 @@ footer {
 	background-size: cover;
 	overflow: hidden;
 	width: 100%;
-	border-top: 1px solid #bbb4a7;
+	/* border-top: 1px solid #bbb4a7; */
 
     
 }
@@ -1439,6 +1439,7 @@ footer {
     font-family: 'Sassy Frass', cursive;
     letter-spacing: 3px;
     color: #56534C;
+	
 
 }
 
