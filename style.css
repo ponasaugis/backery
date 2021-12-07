@@ -414,11 +414,12 @@ p {
 	display: grid;
 	grid-template-rows: 40% 60%;
 	justify-items: center;
+	grid-row-gap: 25px;
 }
 
 .sectionThreeLeft {
 	background-image: url(img/3/1.png);
-	background-position: center;
+	background-position: right;
 	min-height: 300px;
 	max-width: 600px;
 	height: 100%;
@@ -497,16 +498,12 @@ p {
 /* ------------------------- */
 
 .overlayThree {
-	/* display: none; */
-}
-
-.overlayThree {
 	display: block;
     height: 100px;
     width: 100px;
     background-color: #FFFFFF;
     background-image: url(img/3/overlayBg.png);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position: absolute;
     top: -10px;
     right: -10px;
