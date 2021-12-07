@@ -23,7 +23,12 @@ nav {
 	width: 100%;
 	position: absolute;
 	top: 0px;
+	transition: ease-in-out;
+	transition-duration: 0.1s;
+	
+	
 }
+
 
 
 p {
@@ -44,6 +49,7 @@ p {
 
 .expandMenu{
 	flex: 2 1 auto;
+	
 }
 
 .topMenu {
@@ -53,8 +59,7 @@ p {
 	padding-top: 10px;
 	padding-bottom: 15px;
 	display: none;
-	
-		
+			
 }
 
 .topMenu a{
@@ -68,6 +73,7 @@ p {
 .topMenu a, p {
 	color: #FFFFFF;
     font-family: 'Alegreya Sans', sans-serif;
+	
 }
 
 .social {
@@ -121,9 +127,9 @@ p {
 	bottom: 0;
 }
 
-.topMenu{
+/* .topMenu{
 	
-}
+} */
 
 .topMenu a:hover {
     color: rgb(218, 163, 61);
@@ -131,7 +137,8 @@ p {
 
 
 .active {
-	display: flex;	
+	display: flex;
+	
 }
 
 .activeBg {
@@ -756,7 +763,6 @@ p {
 }
 
 .leftFife {
-	/* background-color: lightblue; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
