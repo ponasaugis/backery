@@ -957,6 +957,7 @@ footer {
 	grid-template-areas:
 	"center center"
 	"left right";
+	padding: 5px;
 }
 
 .footerLeft{
@@ -1000,6 +1001,8 @@ footer {
     color: #56534C;
 	margin: 0;
 	margin-top: 5px;
+	border-top: 1px solid #bbb4a7;
+	border-bottom: 1px solid #bbb4a7;
 	
 }
 
@@ -1573,7 +1576,8 @@ footer {
     font-family: 'Sassy Frass', cursive;
     letter-spacing: 3px;
     color: #56534C;
-	
+	border-top: 0;
+	border-bottom: 0;
 
 }
 
