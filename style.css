@@ -970,6 +970,18 @@ footer {
 	
 }
 
+.footerLeft a {
+	margin: 15px 0;
+}
+
+.footerInner a:hover {
+    color: rgb(218, 163, 61);
+}
+
+.footerRight a {
+	margin: 15px 0;
+}
+
 .footerCenter {
 	grid-area: center;
 	width: 100%;
@@ -992,6 +1004,7 @@ footer {
     font-family: 'Alegreya Sans', sans-serif;
     letter-spacing: 2px;
     color: #56534C;
+	text-decoration: none
 }
 
 .gustoso {
@@ -1003,7 +1016,7 @@ footer {
 	margin-top: 5px;
 	border-top: 1px solid #bbb4a7;
 	border-bottom: 1px solid #bbb4a7;
-	
+	text-decoration: none
 }
 
 
