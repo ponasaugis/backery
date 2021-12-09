@@ -6,7 +6,11 @@ let burgerBtninn = document.querySelector(".burgerBtnInner")
 let ghostLetter = document.querySelector(".ghostLetter")
 let readBtn = document.getElementById('readBtn')
 let closeBtn = document.getElementById('closeBtn')
-console.log(readBtn)
+
+
+let ghostRecipe = document.querySelector(".ghostRecipe")
+let recipeBtn = document.getElementById('recipeBtn')
+let closeRecipeBtn = document.getElementById('closeRecipeBtn')
 
 burgerBtn.addEventListener('click', function () {
 	topMenu.classList.toggle('active')
@@ -19,10 +23,20 @@ burgerBtn.addEventListener('click', function () {
 
 readBtn.addEventListener('click', function () {
 	ghostLetter.classList.toggle('ghostLetterActive')
-	console.log('paspaudziau')
+	
 })
 
 closeBtn.addEventListener('click', function () {
 	ghostLetter.classList.toggle('ghostLetterActive')
-	console.log('paspaudziau')
+	
+})
+
+recipeBtn.addEventListener('click', function () {
+	ghostRecipe.classList.toggle('ghostRecipeActive')
+	
+})
+
+closeRecipeBtn.addEventListener('click', function () {
+	ghostRecipe.classList.toggle('ghostRecipeActive')
+	
 })

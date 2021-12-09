@@ -697,6 +697,17 @@ a:hover {
 	padding: 10px;
 }
 
+.topLetter::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: var(--cs);
+    height: var(--cs);
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+}
+
 .divider {
 	text-align: center;
 }
@@ -1036,7 +1047,87 @@ a:hover {
 }
 
 
+.ghostRecipe {
+	display: none;
+	background-color: rgba(0, 0, 0, 0.55);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	justify-content: center;
+	align-items: center;
+	z-index: 2999;
+	transition: all 1s ease-in;
+}
 
+.ghostRecipe p {
+    color: #56534C;
+    font-size: 22px;
+}
+
+.steakRecipe {
+	width: 55%;
+	color: #56534C;
+    font-size: 22px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 2px;
+	line-height: 2;
+}
+
+.steakLetterContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.steakLetterContent img {
+	width: 60%;
+	border: 4px solid #FFFFFF;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.ready {
+	font-weight: bolder;
+}
+
+.steakLetterContent h3 {
+	font-size: 44px;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #56534C;
+	margin: 15px 0;
+}
+
+.steakLetterContent h3 {
+	margin: 0;
+}
+
+.steakLetterText {
+	max-height: 50%;
+	width: 95%;
+	max-width: 484px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 2px;
+	line-height: 2;
+	margin: 0;
+}
+
+.ghostRecipeActive{
+	position: absolute;
+	display: flex;
+	transition: all 1s ease-in;
+}
+
+.topRecipeGhost .letterText{
+	max-width: 100%;
+	width: 90%;
+}
+
+#closeRecipeBtn {
+	margin-top: auto;
+}
 
 
 /* FOOTER */
