@@ -29,6 +29,7 @@ nav {
 	top: 0px;
 	transition: ease-in-out;
 	transition-duration: 0.1s;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	
 	/*Slide effect*/
 	max-height: 70vh;            
@@ -170,15 +171,6 @@ a:hover {
 .burgerBtnInner.active:after {
 	transform: rotate(-45deg);
 	bottom: 9px;
-}
-
-
-/* .topMenu{
-	
-} */
-
-.topMenu a:hover {
-    color: rgb(218, 163, 61);
 }
 
 
@@ -328,7 +320,15 @@ a:hover {
 .cheefPhoto img {
     border-radius: 50%;
     margin: 0  20px ;
-}
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+
+.cheefPhoto img:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+    transition: all 0.05s ease;
+  }
+
 
 .cheefPhoto p {
     font-size: 24px;
@@ -964,6 +964,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 
@@ -1018,6 +1019,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .cardOverlayHead {
@@ -1267,15 +1269,85 @@ footer {
 	justify-content: space-between;
 	width: 100%;
 	display: flex;
-	padding-top: 6px;
-	padding-bottom: 5px;
+	/*padding-top: 6px;*/
+	padding-bottom: 10px;
+	max-height: 100%;
 
 }
 
 
 .topMenu a {
-	margin: 0;
+	margin: 2px 0;
 }
+
+.topMenu a{
+	display: inline-block;
+	position: relative;
+	transition: all 0.6s ease 0s;
+}
+
+
+.topMenu a:hover {
+    color: rgba(223, 187, 88, 1);
+    transition: all 0.3s ease 0s;
+    display: inline-block;
+  	position: relative;
+
+  	
+
+}
+
+.topMenu a::after {
+  content: '';
+  position: absolute;
+  width: 95%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -3px;
+  left: 0;
+  background-color: rgba(223, 187, 88, 1);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  
+}
+
+.topMenu a:hover::after{
+	display: block;
+	content: '';
+	width: 95%;
+	height: 1px;
+	background-color: rgba(223, 187, 88, 1);
+	transform: scaleX(1);
+  	transform-origin: bottom left;
+  	
+}
+
+
+.topMenu a::before {
+  content: '';
+  position: absolute;
+  width: 95%;
+  transform: scaleX(0);
+  height: 1px;
+  top: -3px;
+  left: 0;
+  background-color: rgba(223, 187, 88, 1);
+  transform-origin: top left;
+  transition: transform 0.25s ease-out;
+  
+}
+
+.topMenu a:hover::before{
+	display: block;
+	content: '';
+	width: 95%;
+	height: 1px;
+	background-color: rgba(223, 187, 88, 1);
+	transform: scaleX(1);
+  	transform-origin: top right;
+  	
+}
+
 
 .social {
 	display: block;
@@ -1685,6 +1757,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .cardOverlayHead {
