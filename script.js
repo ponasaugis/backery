@@ -11,13 +11,14 @@ let closeBtn = document.getElementById('closeBtn')
 let ghostRecipe = document.querySelector(".ghostRecipe")
 let recipeBtn = document.getElementById('recipeBtn')
 let closeRecipeBtn = document.getElementById('closeRecipeBtn')
+let social = document.querySelector(".social")
+
 
 burgerBtn.addEventListener('click', function () {
 	topMenu.classList.toggle('active')
 	activeNav.classList.toggle('activeBg')
-	// activeNav.style.backgroundColor = 'blue';
 	burgerBtninn.classList.toggle('active')
-	console.log(activeNav.classList)
+	social.classList.toggle('socialActive')
 		
 });
 

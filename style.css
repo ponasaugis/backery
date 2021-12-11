@@ -105,10 +105,20 @@ a:hover {
 
 
 
-.social {
+.social {	
 	display: none;
 	margin-right: 10px;
 	color: #FFFFFF;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.socialActive{
+	display: block;
+}
+
+.social i {
+	margin: 30px 30px 10px 30px;
 }
 
 
