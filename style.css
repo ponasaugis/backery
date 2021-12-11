@@ -63,8 +63,7 @@ a:hover {
 .logoG p {
 	font-family: 'Sassy Frass', cursive;
 	font-size: 2.5rem;
-	margin: 0;
-	margin-left: 15px;
+	margin: 0 15px 0 15px;
 	color: #fff;
 }
 
